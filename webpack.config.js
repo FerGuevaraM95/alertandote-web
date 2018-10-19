@@ -8,7 +8,7 @@ module.exports = {
         js: './src/js/index.js',
     },
     output: {
-        filename: '[name].[chunkhash].js'
+        filename: 'js/index.[chunkhash].js'
     },
     devtool: 'source-map',
     module: {
@@ -47,7 +47,7 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg|webp)$/i,
                 use: [
-                    'file-loader?name=assets/[name].[ext]',
+                    'file-loader?name=assets/img/[name].[ext]',
                     'image-webpack-loader?bypassOnDebug'
                 ]
             },
@@ -60,7 +60,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist/**/*.*']),
         new MiniCssExtractPlugin({
-            filename: '[name].[chunkhash].css',
+            filename: 'css/styles.[chunkhash].css',
             chunkFilename: '[id].css'
         }),
         new HtmlWebpackPlugin({
