@@ -1,0 +1,50 @@
+//====================================
+// Layout General
+//====================================
+html {
+    min-height: 100%;
+    @include box-sizing(border-box);
+    font-size: $primaryFontSize * 1px;
+}
+
+*,
+*:after,
+*:before {
+    @include box-sizing(inherit);
+    @include antialiased;
+}
+
+body {
+    min-height: 100%;
+    font-family: $primaryFont;
+    font-weight: 300;
+    color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primaryFont;
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+}
+
+button {
+    padding: 0px;
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include transition(max-width ease .2s);
+    @include box-sizing(content-box);
+}
