@@ -64,7 +64,7 @@ module.exports = {
             chunkFilename: '[id].css'
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.pug',
+            template: './src/pug/index.pug',
             filename: 'index.html',
             chunks: ['js']
         })
