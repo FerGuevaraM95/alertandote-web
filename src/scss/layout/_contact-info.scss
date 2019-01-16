@@ -1,0 +1,44 @@
+//====================================
+// Contact Info
+//====================================
+.contact-info {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: -2;
+}
+
+.option {
+    position: relative;
+    cursor: pointer;
+    // &:hover {
+    //     left: 140px;
+    // }
+    &__icon {
+        display: block;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 20px;
+        transition: 0.6;
+        background-color: $primary-color;
+        color: $white;
+        &:hover {
+            color: $primary-color-dark;
+        }
+    }
+    &__text {
+        position: absolute;
+        width: 200px;
+        height: 60px;
+        top: 0;
+        left: -140px;
+        z-index: -1;
+        text-align: center;
+        line-height: 60px;
+        background-color: $primary-color-dark;
+        color: $white;
+        transition: 0.6s;
+    }
+}
