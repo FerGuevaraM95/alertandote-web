@@ -1,0 +1,57 @@
+//====================================
+// Header
+//====================================
+.header {
+  height: 80px;
+  padding: 0 20px;
+  background: $primary-color;
+  color: $white;
+}
+
+.logo {
+    float: left;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+.menu {
+    float: right;
+    line-height: 80px;
+    &:hover {
+        color: $primary-color-dark;
+    }
+    &__btn {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+            color: $primary-color-dark;
+        }
+        &--show {
+            float: right;
+            & i {
+                line-height: 80px;
+            }
+        }
+    }
+    &__item {
+        display: inline;
+    }
+    &__link {
+        padding: 0 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+        transition: 0.4s;
+        &:hover {
+            color: $primary-color-dark;
+        }   
+    }
+}
+
+.chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -9999;
+}

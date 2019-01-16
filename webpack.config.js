@@ -8,7 +8,7 @@ module.exports = {
         js: './src/js/index.js',
     },
     output: {
-        filename: 'js/index.[chunkhash].js'
+        filename: 'scripts.[chunkhash].js'
     },
     devtool: 'source-map',
     module: {
@@ -34,7 +34,7 @@ module.exports = {
                         loader: 'postcss-loader',
                         options: {
                             autoprefixer: {
-                                browser: ['last 3 versions']
+                                browser: ['last 2 versions']
                             },
                             sourceMap: true,
                             plugins: () => [ autoprefixer ]
@@ -47,7 +47,7 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg|webp)$/i,
                 use: [
-                    'file-loader?name=assets/img/[name].[ext]',
+                    'file-loader?name=assets/[name].[ext]',
                     'image-webpack-loader?bypassOnDebug'
                 ]
             },
@@ -60,7 +60,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist/**/*.*']),
         new MiniCssExtractPlugin({
-            filename: 'css/styles.[chunkhash].css',
+            filename: 'styles.[chunkhash].css',
             chunkFilename: '[id].css'
         }),
         new HtmlWebpackPlugin({

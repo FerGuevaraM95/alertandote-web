@@ -1,7 +1,29 @@
 doctype html
 head
     title Alertándote
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.6.3/css/all.css")
 body
-    section.hero
-        h1.hero__title Alertandote
-        p.hero__subtitle Cada segundo es una oportunidad, protege a los tuyos.
+    header.header
+        h2.logo Alertandote
+        input#chk.chk(type='checkbox')
+        label.menu__btn.menu__btn--show.show-menu-btn(for='chk')
+            i.menu__icon.fas.fa-ellipsis-h
+
+        ul.menu
+            li.menu__item
+                a.menu__link(href='#') Productos
+            li.menu__item
+                a.menu__link(href='#') Contactanos
+            li.menu__item
+                a.menu__link(href='#') Blog 
+            li.menu__item
+                a.menu__link(href='#') Preguntas Frecuentes
+            li.menu__item
+                a.menu__link(href='#') Panel Clientes
+            label.menu__btn.menu__btn--hiden.hide-menu-btn(for='chk')
+                i.menu__icon.fas.fa-times
+    //- section.hero
+    //-     .hero__inside
+    //-         .hero__content
+    //-             h1.hero__title Alertandote
+    //-             p.hero__subtitle Cada segundo es una oportunidad, protege a los tuyos.
