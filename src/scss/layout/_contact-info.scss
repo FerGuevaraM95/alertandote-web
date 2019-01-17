@@ -5,22 +5,22 @@
     position: fixed;
     top: 40%;
     left: 0;
-    z-index: -2;
+    z-index: 9;
 }
 
 .option {
     position: relative;
     cursor: pointer;
-    // &:hover {
-    //     left: 140px;
-    // }
+    &:hover .option__text {
+        left: 40px;
+    }
     &__icon {
         display: block;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         text-align: center;
-        line-height: 60px;
-        font-size: 20px;
+        line-height: 40px;
+        font-size: 16px;
         transition: 0.6;
         background-color: $primary-color;
         color: $white;
@@ -30,13 +30,13 @@
     }
     &__text {
         position: absolute;
-        width: 200px;
-        height: 60px;
+        width: 180px;
+        height: 40px;
         top: 0;
         left: -140px;
         z-index: -1;
         text-align: center;
-        line-height: 60px;
+        line-height: 40px;
         background-color: $primary-color-dark;
         color: $white;
         transition: 0.6s;

@@ -17,6 +17,7 @@
 .menu {
     float: right;
     line-height: 80px;
+    z-index: 99;
     &:hover {
         color: $primary-color-dark;
     }
