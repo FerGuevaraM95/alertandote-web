@@ -1,0 +1,42 @@
+//====================================
+// Characteristics
+//====================================
+.characteristics {
+    display: grid;
+    grid-template-columns:repeat(2 1fr);
+    grid-template-rows: 100px repeat(3, 1fr);
+    grid-template-areas: 
+    "title title"
+    "text image"
+    "text image"
+    "text image";
+    margin: 30px auto;
+    text-align: center;
+    &__title {
+        // grid-column-start: 1;
+        // grid-column-end: 3;
+        // grid-row-start: 1;
+        // grid-row-end: 2;
+        grid-area: title;
+        padding: 30px;
+        text-transform: uppercase;
+        font-size: em(22);
+        font-weight: 600;
+        color: $dark;
+    }
+    &__description {
+        grid-area: text;
+        margin-top: 50px;
+        font-size: em(16);
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__image {
+        grid-area: image;
+    }
+}
+
+.imgg {
+    width: 30%;
+}

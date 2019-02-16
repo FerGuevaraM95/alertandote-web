@@ -3,17 +3,20 @@
 //====================================
 .hero {
     position: relative;
-    height: 500px;
+    height: 660px;
+    // width: 100%;
     // z-index: -9999;
     overflow: hidden;
     background-color: $primary-color-light;
-    // background: url('../../img/header-bg.jpg') no-repeat center;
-    // background-size: cover;
+    background: url('../../img/hero.png') no-repeat right;
+    // background-size: cover 500px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
     &__container {
+        width: 420px;
+        height: 140px;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 28%;
+        left: 36%;
         color: $white;
         font-weight: 700;
         text-transform: uppercase;

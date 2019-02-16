@@ -1,5 +1,8 @@
 doctype html
 head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
     title Alertándote
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.6.3/css/all.css")
 body
@@ -19,5 +22,16 @@ body
         p.slogan__text Con Alertandote puedes estar seguro que en caso de sísmo tu equipo te alertará de manera inmediata con el sonido oficial en el momento que el Servicio Sismológico Nacional lo determine.
         .middle
             a(href="#").btn.btn--btn1 Saber Más  
+    //- Seccion caracteristicas
+    section.characteristics.container
+        h2.characteristics__title Alerta sísmica en tiempo real. 
+        .characteristics__description
+            p.characteristics__text A diferencia de otros sistemas de alertamiento sísmico, Alertandote recibe la señal directamente del SSN y es retransmitida en el momento exacto a todos nuestros equipos vía internet.
+            p.characteristics__text Con Alertandote, recibe la señal de alertamiento sísmico, hasta con 60 segundos de anticipación (dependiendo el epicentro), demostrando que es más rápido y confiable que otros sistemas existentes.
+            p.characteristics__text Gracias a que recibimos la señal oficial, solo se te alertará cuando el SSN lo determine y este sea considerado de riesgo, así evitando molestias o falsas alarmas.
+            p.characteristics__text Tu alerta cuenta con el sonido oficial característico. 
+        .characteristics__images
+            img.imgg(src="../img/alerta-pro.png", alt="imagen de muestra")
+
 
     include layout/contact-info.pug     
