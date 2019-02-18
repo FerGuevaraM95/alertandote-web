@@ -1,0 +1,48 @@
+//====================================
+// Characteristics Plus
+//====================================
+.characteristics-plus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px repeat(2, 1fr);
+    grid-template-areas: 
+    "title title"
+    "subtitle subtitle"
+    "image1 text1"
+    "text2 image2";
+    grid-gap: 50px;
+    margin-top: 40px;
+    text-align: center;
+    &__title {
+        grid-area: title;
+        padding: 30px;
+        text-transform: uppercase;
+        font-size: em(20);
+        font-weight: 600;
+        color: $dark;
+    }
+    &__subtitle {
+        grid-area: subtitle;
+        font-size: em(18);
+        font-weight: 500;
+    }
+    &__image1 {
+        grid-area: image1;
+        width: 70%;
+    }
+    &__image2 {
+        grid-area: image2;
+        width: 70%;
+    }
+    &__text  {
+        margin-bottom: 25px;
+        font-size: em(16);
+        line-height: em(20);
+        &--left {
+            grid-area: text 2;
+        }
+        &__right {
+            grid-area: text 1;
+        }
+    }
+}

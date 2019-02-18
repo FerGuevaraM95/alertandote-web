@@ -7,6 +7,7 @@ head
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.6.3/css/all.css")
 body
     include layout/header.pug
+    //- Hero
     section.hero
         .hero__container
             h1.hero__title <span>Alertandote</span>
@@ -15,14 +16,15 @@ body
                 p.typed__text sistema de alertamiento sísmico para la CDMX.
                 p.typed__text Cumple con la normativa de protección civil.
                 p.typed__text Facil y sencillo de implementar
-                //- p.typed__text Protege a los tuyos.
-    //- Seccion eslogan  
+
+    //- Sección eslogan  
     section.slogan.container
         h2.slogan__title Protege a los tuyos.
         p.slogan__text Con Alertandote puedes estar seguro que en caso de sísmo tu equipo te alertará de manera inmediata con el sonido oficial en el momento que el Servicio Sismológico Nacional lo determine.
         .middle
-            a(href="#").btn.btn--btn1 Saber Más  
-    //- Seccion caracteristicas
+            a(href="#").btn.btn--btn1 Saber Más
+
+    //- Sección caracteristicas
     section.characteristics.container
         h2.characteristics__title Alerta sísmica en tiempo real. 
         .characteristics__description
@@ -31,7 +33,20 @@ body
             p.characteristics__text Gracias a que recibimos la <strong>señal oficial</strong>, solo se te alertará cuando el <strong><abbr title="Servicio Sismológico Nacional">SSN</abbr></strong> lo determine y este sea considerado de riesgo, así evitando molestias o falsas alarmas.
             p.characteristics__text <strong>Tu alerta cuenta con el sonido oficial característico de la ciudad de México. </strong>
         .characteristics__images
-            img.characteristics__image(src="../img/mapa-alerta.png", alt="imagen de muestra")
+            img.characteristics__image(src="../img/MAPAAA.png", alt="imagen de muestra")
+
+    //- Seccion Caracteriticas Plus
+    seccion.characteristics-plus.container
+        h3.characteristics-plus__title Más que un sistema de alertamiento sísmico.
+        p.characteristics-plus__subtitle ¡Ten el control de tu Alertandote!
+        .characteristics-plus__content
+            p.characteristics-plus__text.characteristics-plus__text--left <strong>Controla y monitorea</strong> tu equipo Alertandote en tiempo real, desde nuestra aplicación web o móvil.
+            p.characteristics-plus__text.characteristics-plus__text--left Realiza <strong>simulacros en tiempo real</strong>, para incentivar la cultura de prevención y estar preparado en caso de terremoto.
+        .characteristics-plus__content
+            p.characteristics-plus__text.characteristics-plus__text--right Para distintos tipos de siniestros cuenta con <strong>catálogo de sonidos</strong> listos para enviar a tu equipo Alertandote, tales como incendios, huracanes, tormentas, fugas, tsunamis y muchos más.
+            p.characteristics-plus__text.characteristics-plus__text--right Graba <strong>audios personalizados</strong> y envialos al instante a cualquiera de tus equipos Alertandote o guardalos y <strong>crea tu propio catálogo</strong>.
+        img.characteristics-plus__image1(src="../img/activar-simulacro.gif", alt="")
+        img.characteristics-plus__image2(src="../img/voceo.gif", alt="")
 
 
     include layout/contact-info.pug     

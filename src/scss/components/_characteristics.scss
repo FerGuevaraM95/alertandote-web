@@ -39,5 +39,8 @@
     }
     &__image {
         width: 100%;
+        margin-top: 25px;
+        padding: 10px;
+        border: 2px dashed $primary-color;
     }
 }
