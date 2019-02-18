@@ -10,6 +10,12 @@
     }
 }
 
+// @media screen and (max-width: 1100px) {
+//     .container {
+//         max-width: 900px;
+//     }
+// }
+
 @media screen and (max-width: 820px) {
     // HEADER
     .menu {
@@ -46,6 +52,17 @@
     // SLOGAN
     .slogan__text {
         font-size: 16px;
+    }
+
+    .characteristics {
+        grid-auto-columns: 1fr 1fr;
+        grid-template-rows: 100px repeat(4, 1fr);
+        grid-template-areas: 
+            "title title"
+            "image image"
+            "text text"
+            "text text"
+            "text text";
     }
 }
 
