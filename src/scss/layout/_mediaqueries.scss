@@ -57,6 +57,7 @@
         }
     }
 
+    // Characteristics
     .characteristics {
         grid-auto-columns: 1fr 1fr;
         grid-template-rows: 80px 200px 1fr;
@@ -65,8 +66,9 @@
             "image image"
             "text text";
         &__image {
-            width: 50%;
+            width: 250px;
            margin-top: 0; 
+           margin-bottom: 30px;
         }
     }
 }
@@ -80,6 +82,7 @@
 }
 
 @media screen and (max-width: 720px) {
+    // Characteristics
     .characteristics {
         grid-template-rows: 80px 120px 1fr;
         align-items: center;
@@ -121,6 +124,7 @@
 }
 
 @media screen and (max-width: 480px) {
+    // Characteristics
     .characteristics {
         grid-template-rows: 80px 150px 1fr;
         align-items: center;
@@ -134,6 +138,7 @@
 }
 
 @media screen and (max-width: 378px) {
+    // Characteristics
     .characteristics {
         grid-template-rows: 50px 150px 1fr;
         &__title {
