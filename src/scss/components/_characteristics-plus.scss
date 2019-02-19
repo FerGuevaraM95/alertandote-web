@@ -10,9 +10,13 @@
     "subtitle subtitle"
     "image1 text1"
     "text2 image2";
-    grid-gap: 50px;
-    margin-top: 40px;
+    grid-gap: 20px;
+    justify-items: center;
+    margin: 40px 0;
     text-align: center;
+    &__content {
+        margin: 30px 0;
+    }
     &__title {
         grid-area: title;
         padding: 30px;
@@ -28,11 +32,11 @@
     }
     &__image1 {
         grid-area: image1;
-        width: 70%;
+        width: 80%;
     }
     &__image2 {
         grid-area: image2;
-        width: 70%;
+        width: 80%;
     }
     &__text  {
         margin-bottom: 25px;
