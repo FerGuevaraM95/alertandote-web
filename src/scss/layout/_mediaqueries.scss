@@ -106,6 +106,21 @@
     .hero__container {
         left: 47%;
     }
+
+    // Characteristics Plus
+    .characteristics-plus {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 30px 200px 200px 30px 200px 200px;
+    grid-template-areas: 
+    "title"
+    "subtitle1"
+    "image1"
+    "text1"
+    "subtitle2"
+    "image2"
+    "text2";
+    }
 }
 
 @media screen and (max-width: 540px) {

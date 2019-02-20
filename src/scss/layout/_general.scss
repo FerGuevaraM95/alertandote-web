@@ -48,7 +48,7 @@ strong {
 .container {
     max-width: 1000px;
     // margin: 0 auto;
-    margin: 50px 60px;
+    margin: 45px auto;
     padding: 0 50px;
     @include transition(max-width ease .2s);
     @include box-sizing(content-box);

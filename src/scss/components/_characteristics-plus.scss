@@ -4,11 +4,12 @@
 .characteristics-plus {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 30px repeat(2, auto);
+    grid-template-rows: 50px 30px 250px 30px 1fr;
     grid-template-areas: 
     "title title"
-    "subtitle subtitle"
+    "subtitle1 subtitle1"
     "image1 text1"
+    "subtitle2 subtitle2"
     "text2 image2";
     grid-gap: 20px;
     justify-items: center;
@@ -27,9 +28,14 @@
         color: $dark;
     }
     &__subtitle {
-        grid-area: subtitle;
         font-size: em(18);
         font-weight: 500;
+        &--1{
+            grid-area: subtitle1;
+        }
+        &--2 {
+            grid-area: subtitle2;
+        }
     }
     &__image1 {
         grid-area: image1;
