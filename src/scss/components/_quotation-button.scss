@@ -1,0 +1,18 @@
+//====================================
+// Characteristics Plus
+//====================================
+.quotation-button {
+    // position: relative;
+    margin: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: $primary-color;
+    &__title {
+        margin-bottom: 12px;
+        font-size: em(20);
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $white;
+    }
+}

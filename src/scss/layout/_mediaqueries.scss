@@ -136,6 +136,11 @@
     .typed {
         font-size: 18px;
     }
+    // QUOTATION BUTTON
+    .quotation-button__title {
+      font-size: em(16);
+      line-height: em(20);
+    }
 }
 
 @media screen and (max-width: 480px) {

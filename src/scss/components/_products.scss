@@ -16,9 +16,7 @@
     position: relative;
     left: 50%;
     width: 85%;
-    height: 250px;
     min-width: 240px;
-    padding-bottom: 80px;
     background: $white;
     transform: translateX(-50%);
     &__input {
@@ -149,7 +147,6 @@
         "list"
         "button";
         grid-gap: 20px;
-        margin-bottom: 30px;
       }
     }
     &:nth-of-type(2):checked ~ {
@@ -172,7 +169,6 @@
         "list"
         "button";
         grid-gap: 20px;
-        margin-bottom: 30px;
       }
     }
     &:nth-of-type(3):checked ~ {
@@ -196,33 +192,7 @@
         "list"
         "button";
         grid-gap: 20px;
-        margin-bottom: 30px;
       }
     }
-  }
-}
-
-@-webkit-keyframes content {
-  from {
-    opacity: 0;
-    transform: translateY(5%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-
-@keyframes content {
-  from {
-    opacity: 0;
-    transform: translateY(5%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0%);
   }
 }
